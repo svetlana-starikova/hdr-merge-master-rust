@@ -39,8 +39,6 @@ kamadak-exif = "0.5"
 chrono = "0.4"
 # Image processing
 image = "0.25"
-# OpenCV with photo module for AlignMTB
-opencv = { version = "0.97.2", features = ["photo"] }
 # Parallel processing
 rayon = "1.11"
 # CLI argument parsing
@@ -53,3 +51,6 @@ exr = "1.7"
 tokio = { version = "1", features = ["full", "rt-multi-thread", "time"] }
 # Open URL in browser
 open = "5.3"
+
+
+opencv = { version = "0.98", default-features = false, features = ["clang-runtime", "imgcodecs", "imgproc", "photo"] }
